@@ -1,0 +1,98 @@
+body {
+	padding: 50px 100px;
+	font-size: 13px;
+	font-style: Verdana, Tahoma, sans-serif;
+}
+
+.tr { position: absolute; top: 20%; left: 50%; right: 0%; bottom: 0%; 
+      border-width: 0 10px 10px 0; }
+.tl { position: absolute; top: 20%; left: 9%; right: 20%; bottom: 50%; 
+       border-width: 0 0 10px 0; }
+.bl { position: absolute; top: 60%; left: 5%; right: 50%; bottom: 0; 
+       border-width: 0 10px 0 0; }
+.br { position: absolute; top: 70%; left: 50%; right: 0; bottom: 0; 
+    } 
+
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+
+textarea {
+	width: 200px;
+	height: 150px;
+	max-width: 200px;
+	line-height: 18px;
+	font-size: 14pt;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+/* ===========================
+   ====== Submit Button ====== 
+   =========================== */
+
+.submit input {
+	width: 100px; 
+	height: 40px;
+	background-color: #474E69; 
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
+}
+
+.resume input {
+	width: 120px; 
+	height: 40px;
+	background-color: #474E69; 
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
+}
+label.myLabel input[type="file"] {
+    position: fixed;
+    top: -1000px;
+	float: left;
+}
+
+.myLabel {
+    border: 2px solid #C9C9C9;
+    border-radius: 2px;
+    padding: 2px 10px;
+    margin: 2px;
+    background: #FFF;
+    display: inline-block; 
+}
+.myLabel:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+.myLabel:active {
+    background: #CCF;
+}
+.myLabel :invalid + span {
+    color: #474E69;
+}
+.myLabel :valid + span {
+    color: #4A4;
+}
+}

@@ -1,4 +1,4 @@
-Providing intelligent labor market data and applications to low and middle skill workers
+##Providing intelligent labor market data and applications to low and middle skill workers
 
 As technological advances continue to permeate the economy, occupational and geographic communities must effectively bridge skill gaps that are inherently created in the labor market. 
 
@@ -8,48 +8,21 @@ To illustrate how unstructured labor market data can be combined with existing l
 
 This model can be quickly integrated into the existing O*NET web application in a number of ways:
 
-Related occupations tool: Currently, related occupations are static and are linked only between occupation codes. Our model can intake a resume or an unstructured block of text that describes an individual's job experience/skills/etc. and return a list of most related occupations. Our approach is personalized, drawing on the individual’s skills, experiences, background as opposed to only the job title/occupation code.
-Occupation growth forecasts based on real job postings: Currently, the job forecasts posted on O*NET are static and based on a single study. With our collection and classification of job posting, we are able to provide dynamic growth rates of occupations and skills by geography. In addition, individuals can continue to leverage existing government resources associated with specific occupation codes. 
+**1. Related occupations tool:** Currently, related occupations are static and are linked only between occupation codes. Our model can intake a resume or an unstructured block of text that describes an individual's job experience/skills/etc. and return a list of most related occupations. Our approach is personalized, drawing on the individual’s skills, experiences, background as opposed to only the job title/occupation code.
+
+**2. Occupation growth forecasts based on real job postings:** Currently, the job forecasts posted on O*NET are static and based on a single study. With our collection and classification of job posting, we are able to provide dynamic growth rates of occupations and skills by geography. In addition, individuals can continue to leverage existing government resources associated with specific occupation codes. 
 
 While examining the complex dynamics of large economic adaptation requires collecting and structuring vast amounts of labor related data from the internet, this model provides a practical first step towards serving low/middle skill workers with customized labor market resources. 
-
-
-
-Real Example of the Classification Model:
-Not only does our model work on low/middle skill jobs, but we tested it on our financial engineering friend’s resume and the model produced accurate results. 
-
-TOP 10 RELATED OCCUPATION CODES
-O*NET-SOC Code
-Title
-13-2099.01
-Financial Quantitative Analysts
-15-2031.00
-Operations Research Analysts
-15-2091.00
-Mathematical Technicians
-15-2021.00
-Mathematicians
-13-2051.00
-Financial Analysts
-15-2041.00
-Statisticians
-25-1022.00
-Mathematical Science Teachers, Postsecondary
-15-2041.01
-Biostatisticians
-13-2052.00
-Personal Financial Advisors
-15-1199.10
-Search Marketing Strategists
-15-1199.07
-Data Warehousing Specialists
-
-
+<hr>
+#Project Components:
+1. Craigslist Job Scraper (iPython notebook): code that scrapes today's job postings from Craigslist
+2. ML Model (Scikit Learn): machine learning model that takes a string of words and returns job recommnedations
+3. Web App (Heroku/Flask): web application deployed on Heroku that deomstrates a use case of the engine
+<hr> 
 
 Technology Stack 
-Jupyter 
-Flask
-Scikit Learn
-Postgresql
-Heroku
-
+* Jupyter 
+* Flask
+* Scikit Learn
+* Postgresql
+* Heroku

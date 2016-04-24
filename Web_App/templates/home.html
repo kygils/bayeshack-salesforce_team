@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <h1>Personalized Job Recommendations </h1>
+    <meta charset='utf-8' />
+    <title>Job Reco</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+
+  </head>
+  
+  
+  <body>
+	
+	<form class="form">
+	<label class="myLabel">
+    <input type="file" name="file" required/>
+    <font color= "#999999" size="4">Upload Your Resume</font>
+	</label>
+	</form>
+	<!--<div id="container" style="width:100%;">     
+		<!--<div id="left" style="float:left; width:50%;">-->
+		<div class="tl">
+
+			<section>
+
+				<form action="upload" method="post" enctype="multipart/form-data">
+				<p class="text">
+				<textarea name="text" type="text" placeholder="Describe your current/previous jobs, skill set, and experiences!" /></textarea>
+				</p>
+				<input type="file" name="file"><br /><br />
+				<input type="submit" value="Upload">
+				</form>
+				
+			</section>
+		</div> 
+		<!------------------- RIGHT SECTION ---------------------------------------------------->
+		<!---<div id="right" style="float:right; width:50%;">  -->
+		<div class="tr">
+		<section>
+		<form action="upload" method="post" enctype="multipart/form-data">
+		<table>
+
+		
+		<h1>{{name}}</h1>
+		{{data | safe}}
+		
+		</table>
+		
+
+		
+		</form>
+
+		</section>
+		</div>
+		<!-- -->
+		
+		<!------------------- BL Section ---------------------------------------------------->
+		<!---<div id="right" style="float:right; width:50%;">  -->
+		<div class="bl" >
+		
+		<section>
+		
+		<form action="upload" method="post" enctype="multipart/form-data">
+		{{data_map| safe}}
+		</form>
+		
+		</section>
+		
+		</div>
+		<!-- -->
+		
+		<!------------------- BR SECTION ---------------------------------------------------->
+		<!---<div id="right" style="float:right; width:50%;">  -->
+		<div class="br">
+		<section>
+		<form class="form-inline" action="/job_lookup" method='POST'>
+		<div class = "form-group">
+		<div class="input-group">
+		<span class="input-group-addon"></span>
+			<select name="state" class="selectpicker form-control">>
+<option value="Alabama">Alabama</option>
+<option value="Alaska">Alaska</option>
+<option value="Arizona">Arizona</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+<option value="Colorado">Colorado</option>
+<option value="Connecticut">Connecticut</option>
+<option value="Delaware">Delaware</option>
+<option value="District of Columbia">District of Columbia</option>
+<option value="Florida">Florida</option>
+<option value="Georgia">Georgia</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Idaho">Idaho</option>
+<option value="Illinois">Illinois</option>
+<option value="Indiana">Indiana</option>
+<option value="Iowa">Iowa</option>
+<option value="Kansas">Kansas</option>
+<option value="Kentucky">Kentucky</option>
+<option value="Louisiana">Louisiana</option>
+<option value="Maine">Maine</option>
+<option value="Maryland">Maryland</option>
+<option value="Massachusetts">Massachusetts</option>
+<option value="Michigan">Michigan</option>
+<option value="Minnesota">Minnesota</option>
+<option value="Mississippi">Mississippi</option>
+<option value="Missouri">Missouri</option>
+<option value="Montana">Montana</option>
+<option value="Nebraska">Nebraska</option>
+<option value="Nevada">Nevada</option>
+<option value="New Hampshire">New Hampshire</option>
+<option value="New Jersey">New Jersey</option>
+<option value="New Mexico">New Mexico</option>
+<option value="New York">New York</option>
+<option value="North Carolina">North Carolina</option>
+<option value="North Dakota">North Dakota</option>
+<option value="Ohio">Ohio</option>
+<option value="Oklahoma">Oklahoma</option>
+<option value="Oregon">Oregon</option>
+<option value="Pennsylvania">Pennsylvania</option>
+<option value="Rhode Island">Rhode Island</option>
+<option value="South Carolina">South Carolina</option>
+<option value="South Dakota">South Dakota</option>
+<option value="Tennessee">Tennessee</option>
+<option value="Territories    ">Territories    </option>
+<option value="Texas">Texas</option>
+<option value="Utah">Utah</option>
+<option value="Vermont">Vermont</option>
+<option value="Virginia">Virginia</option>
+<option value="Washington">Washington</option>
+<option value="West Virginia">West Virginia</option>
+<option value="Wisconsin">Wisconsin</option>
+<option value="Wyoming">Wyoming</option>
+
+		</select>
+		</div >
+		<button type="submit">Get Jobs!</button>
+		</div>
+		</form>
+		<div style="max-height:300px;overflow-y:auto;">
+		<table>
+
+		
+		<h1>{{name}}</h1>
+		{{data2 | safe}}
+		
+		</table>
+		</div>
+		</section>
+
+		
+				
+		</div>
+		<!-- -->
+		
+  </body>
+</html>
+<!--  <p class="submit">
+			<input type="submit" value="Send" />
+		</p>
+		-->
