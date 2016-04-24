@@ -8,7 +8,7 @@ To illustrate how unstructured labor market data can be combined with existing l
 
 This model can be quickly integrated into the existing O*NET web application in a number of ways:
 
-**1. Related occupations tool:** Currently, related occupations are static and are linked only between occupation codes. Our model can intake a resume or an unstructured block of text that describes an individual's job experience/skills/etc. and return a list of most related occupations. Our approach is personalized, drawing on the individual’s skills, experiences, background as opposed to only the job title/occupation code.
+**1. Related occupations tool:** Currently, related occupations are static and are linked only between occupation codes. Our model can intake a resume or an unstructured block of text that describes an individual's job experience/skills/etc. and return a list of most related occupations. Our approach is personalized, drawing on the individualâ€™s skills, experiences, background as opposed to only the job title/occupation code.
 
 **2. Occupation growth forecasts based on real job postings:** Currently, the job forecasts posted on O*NET are static and based on a single study. With our collection and classification of job posting, we are able to provide dynamic growth rates of occupations and skills by geography. In addition, individuals can continue to leverage existing government resources associated with specific occupation codes. 
 
@@ -28,3 +28,4 @@ Technology Stack
 * Scikit Learn
 * Postgresql
 * Heroku
+
