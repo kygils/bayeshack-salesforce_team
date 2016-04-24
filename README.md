@@ -1,4 +1,4 @@
-Providing intelligent labor market data and applications to low and middle skill workers
+##Providing intelligent labor market data and applications to low and middle skill workers
 
 As technological advances continue to permeate the economy, occupational and geographic communities must effectively bridge skill gaps that are inherently created in the labor market. 
 
@@ -8,7 +8,7 @@ To illustrate how unstructured labor market data can be combined with existing l
 
 This model can be quickly integrated into the existing O*NET web application in a number of ways:
 
-Related occupations tool: Currently, related occupations are static and are linked only between occupation codes. Our model can intake a resume or an unstructured block of text that describes an individual's job experience/skills/etc. and return a list of most related occupations. Our approach is personalized, drawing on the individual’s skills, experiences, background as opposed to only the job title/occupation code.
+Related occupations tool: Currently, related occupations are static and are linked only between occupation codes. Our model can intake a resume or an unstructured block of text that describes an individual's job experience/skills/etc. and return a list of most related occupations. Our approach is personalized, drawing on the individualâ€™s skills, experiences, background as opposed to only the job title/occupation code.
 Occupation growth forecasts based on real job postings: Currently, the job forecasts posted on O*NET are static and based on a single study. With our collection and classification of job posting, we are able to provide dynamic growth rates of occupations and skills by geography. In addition, individuals can continue to leverage existing government resources associated with specific occupation codes. 
 
 While examining the complex dynamics of large economic adaptation requires collecting and structuring vast amounts of labor related data from the internet, this model provides a practical first step towards serving low/middle skill workers with customized labor market resources. 
@@ -16,7 +16,7 @@ While examining the complex dynamics of large economic adaptation requires colle
 
 
 Real Example of the Classification Model:
-Not only does our model work on low/middle skill jobs, but we tested it on our financial engineering friend’s resume and the model produced accurate results. 
+Not only does our model work on low/middle skill jobs, but we tested it on our financial engineering friendâ€™s resume and the model produced accurate results. 
 
 TOP 10 RELATED OCCUPATION CODES
 O*NET-SOC Code
